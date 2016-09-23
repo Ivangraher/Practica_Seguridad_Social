@@ -72,4 +72,16 @@ public class Persona {
     public void setSalario(double salario) {
         this.salario = salario;
     }
+
+    @Override
+    public String toString() {
+        return "Persona{" +
+                "dni='" + dni + '\'' +
+                ", numSS='" + numSS + '\'' +
+                ", nombre='" + nombre + '\'' +
+                ", apellidos='" + apellidos + '\'' +
+                ", edad=" + edad +
+                ", salario=" + salario +
+                '}';
+    }
 }

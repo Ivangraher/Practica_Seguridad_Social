@@ -21,7 +21,7 @@ public class Main {
 
         System.out.println("Altas a la seguridad social: " + seguridadSocial.obtenerTodas());
 
-        System.out.println("Baja a la seguridad social: " + anna);
+        System.out.println("Baja a la seguridad social: " + anna.toString());
 
         seguridadSocial.bajaPersona(anna.getDni());
 
@@ -38,6 +38,10 @@ public class Main {
                 seguridadSocial.obtenerPersonaRangoSalario(23000.00, 45000.00));
 
         System.out.println("obtenerPersonasMayores: "+ seguridadSocial.obtenerPersonasMayores(25));
+
+        seguridadSocial.obtenerSalarioMaximo();
+
+        seguridadSocial.obtenerSalarioMinimo();
 
 
     }
