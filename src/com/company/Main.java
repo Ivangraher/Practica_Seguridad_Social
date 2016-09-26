@@ -8,6 +8,8 @@ public class Main {
 
         //Creación de las diferentes personas
 
+        System.out.println("-------- Ejercicio 1 --------");
+
         Persona jose = new Persona("39425364H", "111111111", "Jose", "Tomas", 35, 45000.00);
         Persona maria = new Persona("39425654W", "33333333", "Maria", "Gallego", 55, 61300.20);
         Persona carlos = new Persona("39425355Q", "22222222", "Carlos", "Torres", 22, 23000.00);
@@ -39,9 +41,18 @@ public class Main {
 
         System.out.println("obtenerPersonasMayores: "+ seguridadSocial.obtenerPersonasMayores(25));
 
+        //ejercicio para hashmaps
+        System.out.println("-------- Ejercicio 2/Hashmaps --------");
+
         seguridadSocial.obtenerSalarioMaximo();
 
         seguridadSocial.obtenerSalarioMinimo();
+
+        //ejercicio para ordenar desde hashmaps
+        System.out.println("-------- Ejercicio 3/Ordenar hashmaps --------");
+
+        System.out.println("Ordenados por DNI:" + seguridadSocial.OrdenarDNI());
+        System.out.println("Ordenados por NumSS:" + seguridadSocial.OrdenarnumSS());
 
 
     }

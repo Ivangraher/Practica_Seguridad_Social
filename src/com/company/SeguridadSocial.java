@@ -1,5 +1,6 @@
 package com.company;
 
+import java.lang.reflect.Array;
 import java.util.*;
 import java.util.stream.Collectors;
 
@@ -147,6 +148,21 @@ public class SeguridadSocial {
         //hashmap dni
         HashMapDni.values().stream().min(Comparator.comparing(Persona::getSalario)).ifPresent(min -> System.out.println("El salario mínimo es "+min));
     }
+
+
+    //Ejercicio de ordenar por DNI y numSS, desde los hashmaps
+    public List<Persona> OrdenarDNI(){
+        ArrayList<Persona> ordenarDNI = new ArrayList<>(HashMapDni.values());
+        ordenarDNI.sort(Comparator.comparing(Persona::getDni));
+        return ordenarDNI;
+    }
+
+    public List<Persona> OrdenarnumSS(){
+        ArrayList<Persona> ordenarnumSS = new ArrayList<>(HashMapSSnum.values());
+        ordenarnumSS.sort(Comparator.comparing(Persona::getNumSS));
+        return ordenarnumSS;
+    }
+
 
     @Override
     public String toString() {
